@@ -1,0 +1,13 @@
+Project/
+│── backend/              # Backend (Node.js + Express + MongoDB)
+│   │── node_modules/     
+│   │── config/
+│   │   ├── db.js         # Database connection setup
+│   │── models/
+│   │   ├── User.js       # User schema for MongoDB
+│   │── routes/
+│   │   ├── auth.js       # Authentication routes (register & login)
+│   │── .env              # Environment variables (DB_URI, JWT_SECRET, etc.)
+│   │── package.json      # Dependencies & scripts
+│   │── server.js         # Main entry point for the backend
+│   └── README.md 
