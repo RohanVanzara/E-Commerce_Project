@@ -1,0 +1,106 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f0f2f5;
+    color: #333;
+  }
+  
+  /* Layout */
+  .section-registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Login form container */
+  .login-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Heading */
+  .main-heading {
+    text-align: center;
+    font-size: 28px;
+    text-transform: capitalize;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields */
+  form div {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+    font-size: 16px;
+  }
+  
+  input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  }
+  
+  /* Submit Button */
+  .btn-submit {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Register link */
+  .login-link {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+  }
+  
+  .login-link a {
+    color: #3498db;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .login-link a:hover {
+    color: #1d6fa5;
+    text-decoration: underline;
+  }
+  

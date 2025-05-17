@@ -1,0 +1,306 @@
+/* ========== General Styles ========== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* ========== Product Container ========== */
+.Panasonic-product-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* ========== Image Section ========== */
+.Panasonic-Both-Image {
+    display: flex;
+    gap: 10px;
+}
+
+/* Thumbnail Gallery */
+.Panasonic-thumbnail-gallery {
+    width: 100px;
+    height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    scrollbar-width: none;
+}
+
+.Panasonic-thumbnail-gallery img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    background-color: white;
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Panasonic-thumbnail-gallery img.active {
+    border-color: #751FFF;
+}
+
+/* Main Product Image */
+.Panasonic-product-image img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== Product Details Section ========== */
+.Panasonic-product-name {
+    width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.Panasonic-product-name h1 {
+    font-size: 20px;
+}
+
+.Panasonic-product-pricing {
+    display: flex;
+    gap: 10px;
+}
+
+.Panasonic-product-pricing h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.Panasonic-discounted-price {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.Panasonic-original-price {
+    color: #751FFF;
+}
+
+.Panasonic-discount-text {
+    color: green;
+    font-weight: bold;
+    margin-top: 1px;
+}
+
+/* Brand & Size Section */
+.Panasonic-brand-size-section {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.Panasonic-brand-size-section p {
+    margin: 5px 0;
+}
+
+/* ========== Quantity Selector ========== */
+.Panasonic-quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.Panasonic-quantity-selector button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ========== Add to Cart Button ========== */
+.Panasonic-add-to-cart {
+    background-color: #751FFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+
+/* ========== Product Details Tabs ========== */
+.Panasonic-tabs-container {
+    /* display: flex; */
+    padding: 10px 0;
+    margin-left: 30px;
+
+    /* width: 9%; */
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.Panasonic-Product-Info {
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+
+/* Tab Buttons */
+.Panasonic-tab-button {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.Panasonic-tab-button.active {
+    border-bottom: 3px solid black;
+}
+
+/* Product Details Section */
+.Panasonic-product-Detail {
+    padding: 20px;
+    /* border: 1px solid #ddd; */
+    /* border-radius: 5px; */
+    /* background: #fff; */
+    /* margin: 10px; */
+
+    /* margin-left: 10px; */
+    display: flex;
+    flex-direction: column;
+    /* width: 90%; */
+    overflow-x: hidden;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+
+
+/* Product Sections */
+.Panasonic-product-section {
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Unordered List */
+.Panasonic-product-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* List Items: 2 Columns */
+.Panasonic-product-section ul li {
+    width: 50%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Product Item */
+.Panasonic-product-item {
+    display: grid;
+    grid-template-columns: 200px auto;
+    gap: 15px;
+    padding: 8px 0;
+}
+
+.Panasonic-product-item span:first-child {
+    font-weight: bold;
+    color: #000;
+}
+
+
+/* ========== Responsive Styles ========== */
+@media (max-width: 600px) {
+
+    /* Stack the overall container */
+    .Panasonic-product-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    /* Stack image and thumbnail in one column */
+    .Panasonic-Both-Image {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    /* Main product image */
+
+    .Panasonic-product-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        width: 100%;
+        max-width: 350px;
+        background-color: #fff;
+    }
+
+
+    .Panasonic-product-image img {
+        width: 100%;
+        max-width: 350px;
+        height: 250px;
+        object-fit: contain;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+
+
+    /* Thumbnail gallery becomes horizontal row */
+    .Panasonic-thumbnail-gallery {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+        height: auto;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .Panasonic-thumbnail-gallery img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Product details responsive */
+    .Panasonic-product-name {
+        width: 95%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    /* Full width spec list */
+    .Panasonic-product-section ul li {
+        width: 100%;
+        padding: 8px 0;
+    }
+}

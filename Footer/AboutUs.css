@@ -1,0 +1,72 @@
+.about-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .about-hero {
+    background: linear-gradient(to right, #7d54c0, #6b2bd3);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+  }
+  
+  .about-hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
+  
+  .about-hero p {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  
+  .about-section {
+    margin-bottom: 30px;
+    background: #f4f6f8;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .about-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #751FFF;
+  }
+  
+  .about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .about-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about-section ul li {
+    font-size: 16px;
+    margin: 8px 0;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .about-section ul li::before {
+    position: absolute;
+    left: 0;
+    color: #751FFF;
+  }
+  
+  .about-footer {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    color: #34495e;
+  }
+  

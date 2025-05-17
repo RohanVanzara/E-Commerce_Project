@@ -1,0 +1,122 @@
+/* Container layout */
+.containerr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Promo card styling */
+.promo-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 300px;
+  position: relative;
+}
+
+/* Background colors */
+.bg-color1 {
+  background-color: #D91656;
+}
+
+.bg-color2 {
+  background-color: #6a1b9a;
+}
+
+/* Content area */
+.content {
+  max-width: 50%;
+}
+
+.subtitlee {
+  font-size: 18px;
+  margin: 0 0 8px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.titlee {
+  font-size: 35px;
+  margin: 0 0 8px;
+  font-weight: bold;
+}
+
+.textt {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.buttonn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  border-radius: 20px;
+  /* border-color: white; */
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: background 0.3s;
+}
+
+.buttonn:hover {
+  background: transparent;
+  color: white;
+}
+
+/* Image container */
+.imagephone {
+  position: absolute;
+  right: 90px;
+  bottom: 0;
+  height: 100%;
+}
+
+.imageheadphone {
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  height: 100%;
+}
+
+.images {
+  height: 100%;
+  object-fit: contain;
+}
+
+
+@media (max-width: 768px) {
+  .containerr {
+    grid-template-columns: 1fr;
+  }
+
+  .promo-card {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .imagephone,
+  .imageheadphone {
+    position: relative;
+    left: 1px;
+    height: 215px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .images {
+    width: 100%;
+    height: 250px;
+  }
+}

@@ -1,0 +1,98 @@
+.newarrival-container {
+  background-color: #fff ;
+  padding: 40px 20px;
+  text-align: center;
+  color:  black;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.newarrival-heading {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.newarrival-subtext {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.newarrival-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newarrival-input {
+  width: 50%;
+  min-width: 250px;
+  padding: 12px;
+  border-radius: 30px;
+  border: 1px solid black;
+  outline: none;
+  background: transparent;
+  color: black;
+  transition: background 0.3s ease;
+}
+.newarrival-input:hover{
+  background-color: #E8E8E8;
+}
+
+.newarrival-button {
+  background-color: #000;
+  color: #fff;
+  font-size: 15px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: 2px solid #751FFF;
+  background: transparent;
+  color: #751FFF;
+}
+
+.newarrival-button:hover {
+  background-color:#751FFF;
+  color: #fff;
+}
+
+.newarrival-checkbox-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.newarrival-checkbox {
+  width: 16px;
+  height: 16px;
+}
+
+.newarrival-label {
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .newarrival-form {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .newarrival-input {
+    width: 90%;
+  }
+
+  .newarrival-button {
+    width: 90%;
+  }
+
+  .newarrival-checkbox-container {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
