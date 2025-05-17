@@ -1,0 +1,58 @@
+.order-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  .order-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  .order-tracker {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .step-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 1;
+  }
+  .step-circle {
+    width: 30px;
+    height: 30px;
+    background: #ccc;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+  }
+  .step-circle.active {
+    background: #4caf50;
+  }
+  .step-label {
+    margin-left: 10px;
+    font-weight: 500;
+  }
+  .step-label.active {
+    color: #4caf50;
+  }
+  .step-line {
+    height: 3px;
+    background: #ccc;
+    flex: 1;
+    margin-left: 10px;
+  }
+  .step-line.active {
+    background: #4caf50;
+  }
+  .order-details {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  

@@ -1,0 +1,174 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.Tv-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.Tv-sidebar {
+  width: 200px;
+  padding: 20px;
+
+  border-radius: 10px;
+}
+
+.Tv\'s-category-list li.active,
+.Tv\'s-category-list li:hover {
+  border-radius: 5px;
+  text-decoration: underline;
+}
+
+.Tv-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Tv-sidebar li {
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.Tv-sidebar .active {
+  font-weight: bold;
+
+}
+
+.Tv\'s-product-list {
+  width: 80%;
+  padding: 20px;
+}
+
+.Tv\'s-sorting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  padding: 0 1rem;
+}
+
+.Tv\'s-sorting h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #222;
+}
+
+.Tv\'s-sortby {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.Tv\'s-sortby label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.Tv\'s-sortby select {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.Tv\'s-sortby select:hover {
+  border-color: #888;
+}
+
+.Tv\'s-sortby select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.Tv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.Tv-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.Tv-card img {
+  width: 100%;
+  margin-top: 23px;
+  height: 200px;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+
+}
+
+.Tv-card img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+
+}
+
+.Tv-card h4 {
+  font-size: 16px;
+  margin: 10px 0;
+  /* font-weight:lighter ; */
+}
+
+.Tv-price {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Tv\'s-old-price {
+  text-decoration: line-through;
+  color: grey;
+  margin-right: 5px;
+}
+
+.Tv\'s-new-price {
+  color: #751FFF;
+}
+
+.Tv-discount {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #fc3535;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .Tv-container {
+    flex-direction: column;
+  }
+
+  .Tv-sidebar {
+    width: 100%;
+  }
+
+  .Tv\'s-product-list {
+    width: 100%;
+  }
+}
